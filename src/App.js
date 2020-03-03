@@ -1,0 +1,235 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const CONTRAST = '#0b0b3d';
+const BORDER_COLOR = '#b3b3b3';
+const SUCCESS = '#00890a';
+const ALT_BACKGROUND_COLOR = '#f7f7f7';
+
+const Header = styled.header`
+  background-color: white;
+`;
+const MaxWidth = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+const Logo = styled.img`
+  width: 80px;
+  padding: 16px;
+`;
+const Banner = styled.div`
+  background-color: ${CONTRAST};
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const IntroText = styled.h2`
+  max-width: 340px;
+  padding: 16px;
+  font-size: 34px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const ServicesImg = styled.img`
+  max-width: 640px;
+  width: 50%;
+  padding: 16px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const SignUpContainer = styled.div`
+  background-color: ${ALT_BACKGROUND_COLOR};
+  border: 1px solid ${BORDER_COLOR};
+  border-width: 0 0 1px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const SignUpText = styled.h3`
+  padding: 32px;
+  margin: 0;
+  font-size: 32px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  color: ${CONTRAST};
+`;
+const InputRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  max-width: 460px;
+  width: 100%;
+  padding: 0 8px 38px 8px;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+const MainContainer = styled.div`
+  margin: 32px auto;
+  max-width: 1260px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+`;
+const Card = styled.div`
+  padding: 32px;
+  background-color: ${ALT_BACKGROUND_COLOR};
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  @media (max-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+  }
+`;
+const CardWrapper = styled.div`
+  width: 50%;
+  box-sizing: border-box;
+  padding: 8px;
+  align-items: center;
+  @media (max-width: 768px) {
+    margin-top: 8px;
+    width: 100%;
+    flex-direction: column;
+  }
+`;
+const CardTextWrapper = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 868px) {
+    text-align: center;
+    width: 100%;
+  }
+`;
+const CardCopy = styled.p`
+  color: ${CONTRAST};
+  font-size: 16px;
+  margin: 0;
+`;
+const CardHeader = styled.h3`
+  color: ${CONTRAST};
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 12px;
+`;
+
+const CardImg = styled.img`
+  width: 40%;
+  padding: 16px;
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+`;
+
+function App() {
+  return (
+    <div>
+      <Header>
+        <MaxWidth>
+          <Logo src="logo.png" alt="Megastash Logo" />
+        </MaxWidth>
+      </Header>
+      <Banner>
+        <IntroText>The <strong>back end</strong> to your <strong>front end</strong>, in <strong>minutes</strong>, with <strong>no code</strong></IntroText>
+        <ServicesImg src="services.png" alt="Database, Auth, Static resources, and API" />
+      </Banner>
+      <SignUpContainer>
+        <SignUpText><strong>Get on the list</strong> for early access</SignUpText>
+        <InputRow>
+          <div id="mc_embed_signup">
+            <form action="https://mega-stash.us19.list-manage.com/subscribe/post?u=ce439a1b5acd3bfb51c7d4fd2&amp;id=cde18da061" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+              <div id="mc_embed_signup_scroll">
+                <label htmlFor="mce-EMAIL"></label>
+                <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="Email" required />
+                <div style={{
+                  position: 'absolute',
+                  left: -5000,
+                }} aria-hidden="true"><input type="text" name="b_ce439a1b5acd3bfb51c7d4fd2_cde18da061" tabIndex="-1" /></div>
+                <div className="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+              </div>
+            </form>
+          </div>
+        </InputRow>
+      </SignUpContainer>
+      <MainContainer>
+        <CardWrapper>
+          <Card>
+            <CardImg
+              src="static.png"
+              alt="html, css, jpg, png, etc..."
+            />
+            <CardTextWrapper>
+              <CardHeader>Easy Deploys</CardHeader>
+              <CardCopy>Push your JS, HTML, and CSS to Github to deploy.</CardCopy>
+            </CardTextWrapper>
+          </Card>
+        </CardWrapper>
+        <CardWrapper>
+          <Card>
+            <CardImg
+              src="api.png"
+              alt="Autogenerated APIs"
+            />
+
+            <CardTextWrapper>
+              <CardHeader>Dedicated Resources</CardHeader>
+              <CardCopy>Tried and true AWS infrastructure without all the work.</CardCopy>
+            </CardTextWrapper>
+          </Card>
+        </CardWrapper>
+        <CardWrapper>
+          <Card>
+            <CardImg
+              src="auth.png"
+              alt="Authentication and Authorization"
+            />
+            <CardTextWrapper>
+              <CardHeader>Secure Access</CardHeader>
+              <CardCopy>Quickly set up Authentication and Authorization, SSL Certificates, and User Permissions.</CardCopy>
+            </CardTextWrapper>
+          </Card>
+        </CardWrapper>
+        <CardWrapper>
+          <Card>
+            <CardImg
+              src="database.png"
+              alt="Databases"
+            />
+            <CardTextWrapper>
+              <CardHeader>Highly Customizable</CardHeader>
+              <CardCopy>Our flexible system allows for a huge variety of use cases.</CardCopy>
+            </CardTextWrapper>
+          </Card>
+        </CardWrapper>
+      </MainContainer>
+    </div>
+  );
+}
+
+export default App;

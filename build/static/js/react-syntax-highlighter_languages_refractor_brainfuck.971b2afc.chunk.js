@@ -1,0 +1,2 @@
+(this["webpackJsonpmegastash-website"]=this["webpackJsonpmegastash-website"]||[]).push([[18],{120:function(e,a,t){"use strict";function s(e){e.languages.brainfuck={pointer:{pattern:/<|>/,alias:"keyword"},increment:{pattern:/\+/,alias:"inserted"},decrement:{pattern:/-/,alias:"deleted"},branching:{pattern:/\[|\]/,alias:"important"},operator:/[.,]/,comment:/\S+/}}e.exports=s,s.displayName="brainfuck",s.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_brainfuck.971b2afc.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpmegastash-website"]=this["webpackJsonpmegastash-website"]||[]).push([[60],{158:function(t,s,e){"use strict";function a(t){t.languages.ini={comment:/^[ \t]*[;#].*$/m,selector:/^[ \t]*\[.*?\]/m,constant:/^[ \t]*[^\s=]+?(?=[ \t]*=)/m,"attr-value":{pattern:/=.*/,inside:{punctuation:/^[=]/}}}}t.exports=a,a.displayName="ini",a.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_ini.f2750d68.chunk.js.map

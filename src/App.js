@@ -49,6 +49,7 @@ const Banner = styled.div`
 `;
 
 const IntroText = styled.h2`
+  box-sizing: border-box;
   max-width: 340px;
   padding: 16px;
   font-size: 34px;
@@ -65,7 +66,7 @@ const IntroText = styled.h2`
 const ServicesImg = styled.img`
   max-width: 640px;
   width: 50%;
-  padding: 16px;
+  padding: 16px 0;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -177,6 +178,7 @@ const CardHeader = styled.h3`
   padding-bottom: 12px;
 `;
 const CardSuperHeader = styled.h2`
+  box-sizing: border-box;
   color: ${CONTRAST};
   font-size: 32px;
   font-weight: bold;
@@ -203,6 +205,7 @@ const Content = styled.div`
   max-width: 900px;
   padding: 32px 64px;
   margin: 0 auto;
+  box-sizing: border-box;
   @media (max-width: 768px) {
     padding: 12px 16px;
   }

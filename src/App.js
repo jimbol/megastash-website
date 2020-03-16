@@ -392,11 +392,11 @@ async function () {
                 src="indie.png"
                 alt="Indie Developer"
               />
-              <Feature><strong>5,000</strong> Requests</Feature>
-              <Feature><strong>1,000</strong> Users</Feature>
+              <Feature><strong>20,000</strong> Requests</Feature>
+              <Feature><strong>1,000</strong> Users per month</Feature>
               <Feature><strong>2</strong> Administrators</Feature>
               <br />
-              <CardHeader>$6/month</CardHeader>
+              <CardHeader>$12/month</CardHeader>
             </PriceWrapper>
           </Card>
         </OneThird>
@@ -409,10 +409,10 @@ async function () {
                 alt="Small teams"
               />
               <Feature><strong>100,000</strong> Requests</Feature>
-              <Feature><strong>10,000</strong> Users</Feature>
+              <Feature><strong>5,000</strong> Users per month</Feature>
               <Feature><strong>8</strong> Administrators</Feature>
               <br />
-              <CardHeader>$32/month</CardHeader>
+              <CardHeader>$58/month</CardHeader>
             </PriceWrapper>
           </Card>
         </OneThird>
@@ -425,10 +425,10 @@ async function () {
                 alt="Growth teams"
               />
               <Feature><strong>1,000,000</strong> Requests</Feature>
-              <Feature><strong>100,000</strong> Users</Feature>
+              <Feature><strong>20,000</strong> Users per month</Feature>
               <Feature><strong>∞</strong> Administrators</Feature>
               <br />
-              <CardHeader>$54/month</CardHeader>
+              <CardHeader>$216/month</CardHeader>
             </PriceWrapper>
           </Card>
         </OneThird>

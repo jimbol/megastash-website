@@ -431,6 +431,7 @@ async function () {
               <CardHeader>$216/month</CardHeader>
             </PriceWrapper>
           </Card>
+
         </OneThird>
       </MainContainer>
       <SignUpContainer style={{ borderTopWidth: 1 }}>
